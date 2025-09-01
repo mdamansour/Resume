@@ -38,7 +38,7 @@ View the full PDF [here](https://mdamansour.github.io/Resume/Resume.pdf).
 To compile the LaTeX file, you'll need:
 - A LaTeX distribution (e.g., TeX Live, MiKTeX, or Overleaf online editor).
 - Packages: geometry, enumitem, multicol, parskip, xcolor, fontenc, helvet, graphicx, hyperref, fontawesome5 (most are standard; install via your LaTeX manager if missing).
-- Optional: A profile image named `profile.jpg` (placed in the same directory).
+- A profile image named `profile.jpg` (placed in the same directory).
 
 ## How to Use
 
