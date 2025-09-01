@@ -25,6 +25,7 @@ View the full PDF [here](https://mdamansour.github.io/Resume/Resume.pdf).
   - Technical Skills
   - Languages
   - Certifications
+  - Volunteering
   - Soft Skills
   - Hobbies
   - Professional Summary
