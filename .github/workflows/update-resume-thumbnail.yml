@@ -23,11 +23,11 @@ jobs:
       - name: Convert first page of PDF to PNG
         shell: bash
         run: |
-          pdftoppm -png -f 1 -l 1 -scale-to-x 800 -scale-to-y -1 Resume.pdf Resume-thumbnail
-          mv Resume-thumbnail-1.png Resume-thumbnail.png
+          pdftoppm -png -f 1 -l 1 -scale-to-x 800 -scale-to-y -1 Resume.pdf Resume
+          mv Resume-1.png Resume.png
 
       - name: Commit and push thumbnail
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: auto-update Resume thumbnail"
-          file_pattern: "Resume-thumbnail.png"
+          file_pattern: "Resume.png"
