@@ -1,0 +1,28 @@
+name: Release latest PDF
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - Resume.pdf
+
+permissions:
+  contents: write
+
+jobs:
+  release-latest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Publish latest Resume.pdf
+        uses: ncipollo/release-action@v1
+        with:
+          tag: latest
+          name: Latest
+          allowUpdates: true
+          artifacts: Resume.pdf
+          artifactContentType: application/pdf
+          body: "Automated release of the latest Resume.pdf"

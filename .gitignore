@@ -4,3 +4,7 @@
 !*.md  
 !*.pdf            
 !*.png           
+!.github/
+!.github/workflows/
+!.github/workflows/*.yml
+!.github/workflows/*.yaml
