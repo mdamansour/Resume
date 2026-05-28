@@ -66,6 +66,18 @@ To compile the LaTeX file, you'll need:
    - Avoid headers/footers, as they might not parse well.
    - Test your PDF with an ATS simulator tool online.
 
+## TeXworks + MiKTeX Setup
+
+1. Install MiKTeX (includes TeXworks).
+2. Open TeXworks: Edit -> Preferences -> Typesetting.
+3. Add or edit a processing tool for `pdflatex`.
+4. Arguments (one per line):
+   ```
+   -aux-directory=/.build
+   -synctex=0
+   $fullname
+   ```
+
 ## Customization Guide
 
 - **Colors**: Defined at the top (e.g., `headerblue`, `sectionteal`). Adjust RGB values to match your preference.
